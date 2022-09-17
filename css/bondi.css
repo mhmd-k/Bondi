@@ -1,0 +1,207 @@
+:root {
+  --yellow-color: #ffc400;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --sectino-bg-color: #eff7fa;
+  --main-bg: #19283f;
+}
+html {
+  scroll-padding-top: 50px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.transition {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.main-btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.main-btn:hover {
+  color: var(--yellow-color) !important;
+  background-color: var(--red-color) !important;
+}
+.main-title::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 3px;
+  background-color: var(--green-color);
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* header */
+nav {
+  background-color: var(--main-bg);
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav .navbar-toggler:hover {
+  border-color: var(--green-color) !important;
+}
+nav .container svg {
+  color: var(--green-color);
+}
+nav .container input.hidden {
+  width: 0%;
+  padding: 0;
+  border: 0;
+}
+nav .container .form button {
+  border-left: solid 2px var(--green-color);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+nav .container ul li a:hover,
+nav .container ul li a.active {
+  color: var(--green-color) !important;
+}
+/* end header */
+/* landing */
+.landing {
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+/* services */
+.services .icons {
+  height: 150px;
+}
+.services .icons svg {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.services .icons svg:nth-child(1) {
+  color: var(--sectino-bg-color);
+}
+.services .icons svg:nth-child(2) {
+  color: var(--green-color);
+}
+.services h3 {
+  color: var(--yellow-color);
+  font-weight: 600;
+}
+/* end services */
+/* portfolio */
+.portfolio {
+  background-color: var(--sectino-bg-color);
+}
+.portfolio ul {
+  list-style: none;
+}
+.portfolio ul li {
+  cursor: pointer;
+  font-weight: 600;
+}
+.portfolio ul li:hover {
+  color: var(--yellow-color);
+}
+.portfolio ul li.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.portfolio .row .col-sm-6 img {
+  border: white 5px solid;
+}
+/* end portfolio */
+/* team */
+.team {
+  background-color: var(--sectino-bg-color);
+}
+.team .card .card-title {
+  background-color: var(--green-color);
+}
+.project {
+  background-color: var(--main-bg);
+}
+/* end team */
+/* contact */
+.contact {
+  background-color: var(--yellow-color);
+}
+.contact form input::placeholder {
+  color: white;
+}
+.contact form input:focus {
+  box-shadow: none;
+}
+.contact form h4 {
+  color: var(--main-bg);
+}
+.contact form button {
+  color: var(--yellow-color);
+  background-color: var(--main-bg);
+}
+.contact form button:hover {
+  background-color: var(--main-bg) !important;
+  color: var(--yellow-color) !important;
+}
+/* end contact */
+/* footer  */
+footer {
+  background-color: var(--main-bg);
+  color: white;
+}
+footer span:nth-child(1) {
+  color: var(--green-color);
+}
+footer span:nth-child(2) {
+  color: var(--yellow-color);
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+footer ul li a:hover {
+  color: white !important;
+}
+footer .icons svg {
+  width: 20px;
+  height: 20px;
+}
+footer .icons svg:nth-child(1) {
+  background-color: #1668aa;
+}
+footer .icons svg:nth-child(2) {
+  background-color: #00bcd4;
+}
+footer .icons svg:nth-child(3) {
+  background-color: red;
+}
+footer .icons svg:nth-child(4) {
+  background-color: #2196f3;
+}
+/* end footer */
